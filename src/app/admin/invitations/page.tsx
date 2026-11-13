@@ -1,0 +1,4 @@
+import { MailPlus } from 'lucide-react';
+import { AdminPageHeading } from '@/components/admin/admin-page-heading';
+import { AdminTable } from '@/components/admin/admin-table';
+export default function AdminInvitationsPage() { return <div className="mx-auto max-w-5xl"><AdminPageHeading eyebrow="Access control" title="Lời mời admin" description="Chỉ email được mời và còn hạn mới có thể hoàn tất admin onboarding." action={<button className="btn btn-primary"><MailPlus size={17} /> Tạo lời mời</button>} /><AdminTable columns={['Email', 'Role', 'Trạng thái', 'Hết hạn']} rows={[["nqzkhoi010608@gmail.com", 'super_admin', <span key="accepted" className="text-[#67d391]">Đã chấp nhận</span>, '—'], ['editor@example.com', 'editor', <span key="pending" className="text-signal">Đang chờ</span>, 'Trong 23 giờ']]} /></div>; }

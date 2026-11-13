@@ -1,0 +1,3 @@
+import { AdminPageHeading } from '@/components/admin/admin-page-heading';
+import { AdminTable } from '@/components/admin/admin-table';
+export default function AdminUsersPage() { return <div className="mx-auto max-w-7xl"><AdminPageHeading eyebrow="Access" title="Người dùng" description="Tài khoản viewer và admin được kiểm tra server-side." /><AdminTable columns={['Email', 'Role', 'Trạng thái', 'Hoạt động gần nhất']} rows={[[<span key="email" className="font-medium">nqzkhoi010608@gmail.com</span>, <span key="role" className="text-signal">super_admin</span>, <span key="status" className="text-[#67d391]">Đang hoạt động</span>, <span key="last" className="text-muted">Chưa có session</span>], ['viewer.demo@example.com', 'viewer', 'Đang hoạt động', 'Hôm nay']]} /></div>; }
